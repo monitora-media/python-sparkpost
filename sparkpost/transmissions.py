@@ -45,6 +45,7 @@ class Transmissions(Resource):
         model['options']['skip_suppression'] = kwargs.get('skip_suppression')
         model['options']['ip_pool'] = kwargs.get('ip_pool')
         model['options']['inline_css'] = kwargs.get('inline_css')
+        model['options']['perform_substitutions'] = kwargs.get('perform_substitutions')
 
         model['content']['use_draft_template'] = \
             kwargs.get('use_draft_template', False)
